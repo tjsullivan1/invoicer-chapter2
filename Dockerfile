@@ -4,7 +4,7 @@ RUN useradd -g 10001 -u 10001 \
     -d /app -s /sbin/nologin \
      app
 
-RUN mkdir /app/statics/
+RUN mkdir -p /app/statics/
 ADD statics /app/statics/
 
 COPY bin/invoicer /app/invoicer
