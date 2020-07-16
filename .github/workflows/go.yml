@@ -50,3 +50,8 @@ jobs:
         repository: tjsulllivan1/invoicer
         tag_with_ref: true
         tag_with_sha: true
+
+  - name: ZAP Scan
+    uses: zaproxy/action-baseline@v0.3.0
+    with:
+      target: 'https://tjssecdevops.azurewebsites.net/'
